@@ -20,7 +20,7 @@ event_handler = EventHandler()
 observer = Observer()
 observer.schedule(event_handler, folder_track, recursive=True)
 observer.start()
-
+# Запуск программы каждые 10 милисекунд на отслеживание файлов в каталоге
 try:
     while(True):
         time.sleep(10)
